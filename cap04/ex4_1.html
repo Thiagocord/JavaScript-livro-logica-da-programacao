@@ -8,33 +8,28 @@
 </head>
 
 <body>
-    <h1>programa Situação do aluno</h1>
-    <form action="">
+    <h1>Programa Situação do Aluno</h1>
+    <form action="" id="form2">
         <p>
-            <label for="innome">Nome do Aluno:</label>
-            <input type="text" name="innome" id="innome" required>
+            <label for="innome">Nome do aluno:</label>
+            <input type="text" name="innome" id="innome">
         </p>
         <p>
-            <label for="innota1">1ª nota:</label>
-            <input type="number" name="innota1" id="innota1" step="0.1" required>
+            <label for="nota1">nota 1:</label>
+            <input type="number" name="nota1" id="nota1" min="1" max="10" step="0.1">
+        </p>
         </p>
         <p>
-            <label for="innota2">2ª nota:</label>
-            <input type="number" name="innota2" id="innota2" step="0.1" required>
+            <label for="nota2">nota 2:</label>
+            <input type="number" name="nota2" id="nota2" min="1" max="10" step="0.1">
         </p>
         <p>
-            <input type="submit" value="Exibir média e situação">
+            <input type="submit" value="Exibir Média do aluno">
         </p>
     </form>
-    <h3 id="intexto1"></h3>
-    <h3 id="intexto2"></h3>
-
-    <script>
-        const 
-
-    </script>
-
-
+    <h3 id="res1"></h3>
+    <h3 id="res2"></h3>
+    <script src="index.js"></script>
 </body>
 
 </html>
