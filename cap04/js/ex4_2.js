@@ -1,12 +1,13 @@
-const texto = document.querySelector("h1");
+const frm = document.querySelector("form");
+const texto = document.querySelector("h3");
 
-let v1 = 5;
-let v2 = 6;
+frm.addEventListener("submit" , (e) => {
+    const n1 = Number(document.getElementById("numero1").value);
+    const n2 = Number(document.getElementById("numero2").value);
 
-if (v1 < 6 && (v2 > 9 || v1 < 6)) {
-    texto.innerText = "verdade"
-} else {
-    texto.innerText = "falso"
-}
+    const media = (n1+n2);
 
+    texto.innerHTML = `A soma dos dois número é: ${media}`;
 
+    e.preventDefault();
+})
