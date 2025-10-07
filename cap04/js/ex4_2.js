@@ -10,7 +10,7 @@ frm.addEventListener("submit", (e) => {
     const altura = Number(frm.inaltura.value);
 
 
-    if (masculino == true) {
+    if (masculino) {
         pesoIdeal = 22 * (altura * altura);
     } else {
         pesoIdeal = 21 * (altura * altura);
