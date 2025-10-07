@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
 body {
-    background-color: #e6e6e6;
+    background-color: #a3a3a3;
 }
 
 img {
     float: left;
     height: 300px;
     width: 300px;
+    border-radius: 3px;
 }
 
 h1 {

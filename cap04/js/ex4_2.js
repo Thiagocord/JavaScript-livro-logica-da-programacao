@@ -1,13 +1,21 @@
-const frm = document.querySelector("form");
-const texto = document.querySelector("h3");
+const frm = document.querySelector("form")
+const res = document.getElementById("resposta")
 
-frm.addEventListener("submit" , (e) => {
-    const n1 = Number(document.getElementById("numero1").value);
-    const n2 = Number(document.getElementById("numero2").value);
 
-    const media = (n1+n2);
+frm.addEventListener("submit", (e) => {
+    e.preventDefault()
 
-    texto.innerHTML = `A soma dos dois número é: ${media}`;
+    const nome = frm.innome.value.trim();
+    const masculino = frm.inmasculino.checked;
+    const altura = Number(frm.inaltura.value);
 
-    e.preventDefault();
+
+    if (masculino == true) {
+        pesoIdeal = 22 * (altura * altura);
+    } else {
+        pesoIdeal = 21 * (altura * altura);
+    }
+
+    res.innerText = `${nome} seu peso ideal é ${pesoIdeal.toFixed(2)} kg.`
+        
 })
