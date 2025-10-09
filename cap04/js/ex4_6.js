@@ -21,14 +21,20 @@ frm.addEventListener("submit", (e) => {
 
     if (notasCem > 0) {
         res1.innerText = `Notas de 100 R$: ${notasCem}`
+    } else {
+        res1.innerText = " "
     }
 
     if (notasCiquenta > 0) {
         res2.innerText = `Notas de 50 R$: ${notasCiquenta}`
+    } else {
+        res2.innerText = ""
     }
 
     if (notasDez > 0 ){
         res3.innerText = `Notas de 10 R$: ${notasDez}`
+    } else {
+        res3.innerText = ""
     }
     
     
