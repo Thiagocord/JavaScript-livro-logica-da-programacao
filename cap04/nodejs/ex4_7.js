@@ -9,3 +9,6 @@ if (peixes <= pessoas) {
 }
 
 console.log(`Pagar R$: ${pagar.toFixed(2)}`)
+
+
+
