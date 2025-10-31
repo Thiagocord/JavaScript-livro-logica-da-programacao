@@ -12,13 +12,13 @@ frm.addEventListener("submit", (e) => {
 
     for (let i = 1; i <= num; i++) {
 
-        resposta += nomeEtiqueta + "    ";
-
-        if (i % 4 === 0) {
-            resposta += "\n";
+        if (i % 2 == 1) {
+            resposta += `${(nomeEtiqueta + " " + i).padEnd(15, " ")}`
+        } else {
+            resposta += `${nomeEtiqueta} ${i}\n`
         }
-
     }
+
 
     resp.innerText = resposta;
 
