@@ -45,4 +45,3 @@ frm.addEventListener("submit", (e) => {
 frm.btbutton.addEventListener("click", () => {
     location.reload();
 });
-
